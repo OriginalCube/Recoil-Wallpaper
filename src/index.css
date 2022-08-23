@@ -11,6 +11,7 @@ html{font-size: 100%;}
 }
 
 body {
+  background-color: white;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -90,4 +91,11 @@ code {
   width: 50%;
   display: flex;
   align-items: center;
+}
+
+.audioVisualizer{
+  position: absolute;
+  z-index: 100;
+  left: 70%;
+  bottom: 10%;
 }

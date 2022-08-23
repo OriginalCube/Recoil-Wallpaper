@@ -1,5 +1,6 @@
 import React from 'react'
 import AudioData from './components/AudioData';
+import AudioVisualizer from './components/AudioVisualizer';
 import Clock from './components/Clock';
 
 const Main = () => {
