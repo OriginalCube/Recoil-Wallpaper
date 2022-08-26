@@ -99,3 +99,38 @@ code {
   left: 70%;
   bottom: 10%;
 }
+
+.navigation{
+  position: absolute;
+  top: 5.5%;
+  left: 3vh;
+  width: 5vh;
+  height: 5vh;
+  animation: boxRotate 5s infinite;
+}
+
+.optionBar{
+  position: absolute;
+  top: 15%;
+  left: 1.5vh;
+  width: 8vh;
+  height: 35vh;
+}
+
+.optionIcon{
+  position: relative;
+  margin: auto; 
+  width: 5vh;
+  height: 5vh;
+  animation: boxTurn 9s infinite;
+}
+
+@keyframes boxTurn {
+  33% {transform: rotate(45deg);}
+  66% {transform: rotate(-45deg);}
+  100% {transform: rotate(0deg);}
+}
+
+@keyframes boxRotate {
+  50% {transform: rotate(180deg);}
+}
