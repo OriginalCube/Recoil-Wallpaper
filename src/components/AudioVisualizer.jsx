@@ -4,7 +4,7 @@ const AudioVisualizer = () => {
     const canvasRef = React.useRef(null);
     React.useEffect(() => {
         const canvas = canvasRef.current;
-        canvas.width = window.innerWidth/2;
+        canvas.width = window.innerWidth/2.4;
         canvas.height = window.innerHeight/4;
         let ctx = canvas.getContext('2d');
         function wallpaperAudioListener(audioArray) {
@@ -18,7 +18,7 @@ const AudioVisualizer = () => {
             for (let i = 0; i < halfCount; ++i) {
                 // Create an audio bar with its hight depending on the audio volume level of the current frequency
                 var height = canvas.height * Math.min(audioArray[i], 1);
-                ctx.fillRect(barWidth * i, canvas.height - height, barWidth, height);
+                ctx.fillRect(barWidth * i/.8, canvas.height - height, barWidth, height);
             }
         }
         // Register the audio listener provided by Wallpaper Engine.
