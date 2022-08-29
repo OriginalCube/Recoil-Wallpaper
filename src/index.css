@@ -100,6 +100,13 @@ code {
   bottom: 7%;
 }
 
+.audioVisualizerDark{
+  position: absolute;
+  top: 12%;
+  left: 7.5%;
+  border: 2px solid white;
+}
+
 .navigation{
   position: absolute;
   top: 5.5%;
@@ -114,7 +121,7 @@ code {
   top: 15%;
   left: 1.5vh;
   width: 8vh;
-  height: 35vh;
+  height: 37vh;
 }
 
 .optionIcon{
