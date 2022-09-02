@@ -141,3 +141,11 @@ code {
 @keyframes boxRotate {
   50% {transform: rotate(180deg);}
 }
+
+.filterCard{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: .8;
+  background-color: black;
+}

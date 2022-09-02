@@ -47,7 +47,6 @@ const Light = (props) => {
         alt=''/>} 
         {props.clock?<Clock />:null}
         {props.canvas?<Canvas />:null}
-        {props.audioVis?<AudioVisualizer/>:null}
         {props.audioPlay?<AudioPlayer />:null}
  </div>
   )
