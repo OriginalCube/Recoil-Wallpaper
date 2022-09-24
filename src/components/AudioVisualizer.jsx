@@ -19,11 +19,14 @@ const AudioVisualizer = () => {
                 // Create an audio bar with its hight depending on the audio volume level of the current frequency
                 var height = canvas.height * Math.min(audioArray[i], 1);
                 ctx.fillRect(barWidth * i/.8, canvas.height - height, barWidth, height);
+                ctx.shadowColor = 'black';
+                ctx.shadowBlur = 10;
+                ctx.shadowOffsetX = 5;
             }
         }
         // Register the audio listener provided by Wallpaper Engine.
-        window.wallpaperRegisterAudioListener(wallpaperAudioListener);
-    }, [])
+        try{window.wallpaperRegisterAudioListener(wallpaperAudioListener)}catch(e){console.log('Only works with "WE"')}
+        }, [])
     
   return <canvas className='audioVisualizer' ref={canvasRef}/> 
 }

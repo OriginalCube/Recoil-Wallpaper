@@ -12,8 +12,8 @@ const Navigation = (props) => {
     }
     return (
     <div>
-        {activate?<OptionBar mode={props.mode} setMode={props.setMode} clock={props.clock} setClock={props.setClock} canvas={props.canvas} setCanvas={props.setCanvas} audioPlay={props.audioPlay} setAudioPlayer={props.setAudioPlayer} audioVis={props.audioVis} setAudioVis={props.setAudioVis}/>:null}
-        <img src={`./assets/images/icons/${props.mode}setting.png`}
+        {activate?<OptionBar color={props.color} setColor={props.setColor} mode={props.mode} setMode={props.setMode} clock={props.clock} setClock={props.setClock} canvas={props.canvas} setCanvas={props.setCanvas} audioPlay={props.audioPlay} setAudioPlayer={props.setAudioPlayer} audioVis={props.audioVis} setAudioVis={props.setAudioVis}/>:null}
+        <img src={`./assets/images/icons/${props.color}setting.png`}
         width='5vh' height='5vh' className='navigation' onClick={onActivate} alt=''/>
     </div>
   )

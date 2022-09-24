@@ -1,9 +1,10 @@
 import React from 'react'
 
-const Clock = () => {
+const Clock = (props) => {
     const [hour, setHour] = React.useState('00');
     const [minute, setMinute] = React.useState('0');
     const [second, setSecond] = React.useState('');
+    const [color, setColor] = React.useState('')
     React.useEffect(()=>{
         setInterval(() => {
             let currentTime = new Date();
@@ -12,10 +13,14 @@ const Clock = () => {
             setSecond(currentTime.getSeconds());
         }, 1000);
     },[]) 
+
+    React.useEffect(()=>{
+        setColor(props.mode);
+    },[props.mode])
     return (
-        <p className='mainClock absolute text-8xl' style={{top:'40vh', left:'8vw'}}>{hour + ':'} 
+        <p className={`mainClock absolute text-9xl opacity-80`} style={{top:'77vh', left:'2vw', color:`${color}`}}>{hour + ':'} 
         { minute>9? minute: '0' + minute}
-        <span className='absolute text-2xl top-1/2'>{ second>9? second: '0' + second}</span></p>
+        <span className={`absolute text-3xl top-2/3 opacity-80`} style={{color:`${color}`}}>{ second>9? second: '0' + second}</span></p>
   )
 }
 
