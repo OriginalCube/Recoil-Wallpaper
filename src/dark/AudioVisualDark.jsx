@@ -23,7 +23,7 @@ const AudioVisualDark = () => {
             }
         }
         // Register the audio listener provided by Wallpaper Engine.
-        try{window.wallpaperRegisterAudioListener(wallpaperAudioListener)}catch(e){console.log('Only works with "WE"')};
+        window.wallpaperRegisterAudioListener(wallpaperAudioListener)
     }, [])
     
 
