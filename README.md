@@ -3,6 +3,9 @@ This is my first-ever release for the wallpaper engine, this is based on the ani
 
 <img src="https://i.imgur.com/tliEz2r.png" alt="Logo" />
 
+##  Steam Workshop Link
+[Lycoris Recoil Audio Visual Wallpaper](https://steamcommunity.com/sharedfiles/filedetails/?id=2867030259)
+
 ## Time to develop
 ~2-3 Months?
 
